@@ -1,0 +1,86 @@
+*{
+    padding:0;
+}
+/* .search-inp{
+    width:400px;
+    height:30px;
+    margin:100px auto;
+} */
+.search-inp .inp{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.search-inp .inp .text{
+    display: inline-block;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border:1px solid #ddd;
+    padding-left:10px;
+}
+
+.search-inp .inp .btn{
+    position: absolute;
+    right:0;
+    top:0px;
+    width:10%;
+    height:100%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transform: translateX(100%);
+}
+.search-inp .inp .btn div{
+    width:100%;
+    height:100%;
+    color:#fff;
+    text-align: center;
+    font-size:14px;
+    background-color:#545652;
+}
+#search_suggest{
+    position: relative;
+    z-index:100;
+}
+#search_suggest ul{
+    width: 460px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 17px;
+}
+#search_suggest ul li{
+    background: #fff;
+    height: 26px;
+    width: 537px;
+}
+#search_suggest ul li:hover{
+    background: #f4f4f4;
+}    
+#search_suggest ul li:last-of-type{
+    border-bottom: 0px;
+}
+#search_suggest ul li a{
+    padding: 6px;
+    color: #999;
+    display: block;
+    height: 26px;
+    width: 537px;
+}
+
+#search_suggest ul li a img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+#search_suggest ul li a div{
+   position: relative;
+}
+#search_suggest ul li a div p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #3C3C3C;
+}
